@@ -1,0 +1,20 @@
+body {
+	background-image: url("https://media-public.canva.com/MACZWco3DVA/1/screen.jpg");
+	background-repeat: no-repeat;
+  	background-size: cover;
+}
+
+h1, #todo  {
+	text-align: center;
+	font-family: 'Marck Script', cursive;
+	font-size: 26px;
+	
+}
+ul {
+	list-style-type:none;
+}
+input {
+    width: 250px;
+    padding: 5px;
+    
+}

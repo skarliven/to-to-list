@@ -1,0 +1,36 @@
+ <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Todo List</title>
+    <!-- Custom CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Marck+Script" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <h1>Our To do List </h1>
+    <div id="todo">
+      <h2>{{ newTask }}</h2>
+      <section>
+      <input type="text" placeholder="What do you need to do?" v-model= "newTask" v-on:keyup.enter='addTask'>
+      </section>
+      <ul>
+        <li v-for='task in todoList'>
+          <label>{{ task }}</label>
+          <button type="button"
+          v-on:click="removeTask(task)">X</button>
+        </li>
+      </ul>
+
+
+    </div>
+
+	  <!-- scripts -->
+    <!-- Vue -->
+   <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+    <!-- Custom jQuery and JavaScript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
